@@ -1,0 +1,5 @@
+label.required::after {
+	content: " *";
+	color: #e32;
+	vertical-align: middle;
+}

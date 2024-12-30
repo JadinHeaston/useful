@@ -1,0 +1,37 @@
+/* 
+Usage:
+	<div id="cross"></div>
+*/
+
+#cross {
+	height: 100vh;
+	max-height: 100vh;
+	pointer-events: none;
+	position: fixed;
+	width: calc(100vw - var(--scrollbar-width));
+	max-width: calc(100vw - var(--scrollbar-width));
+	z-index: 9999;
+}
+
+#cross:before,
+#cross:after {
+	content: "";
+	pointer-events: none;
+	position: fixed;
+	background-color: black;
+}
+
+#cross:before {
+	height: 100%;
+	left: 50%;
+	top: 0;
+	width: .5vh;
+}
+
+
+#cross:after {
+	height: .5vh;
+	left: 0;
+	top: 50%;
+	width: 100%;
+}
