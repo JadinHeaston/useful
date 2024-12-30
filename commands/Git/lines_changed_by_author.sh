@@ -1,0 +1,1 @@
+git log --numstat --pretty="%H" --author="{AUTHOR_NAME}" commitid1..commitid2 | awk 'NF==3 {plus+=$1; minus+=$2} END {printf("+%d, -%d\n", plus, minus)}'
